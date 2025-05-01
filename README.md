@@ -26,5 +26,57 @@ Ambos datasets están disponibles en Kaggle.
 
 ## 💻 Estructura del repositorio
 
+├── data/                      # Contiene los datasets descargados de Kaggle
+│   ├── ratings_small.csv      # The Movies Dataset en elq ue se incluye información de usuarios y sus valoraciones
+│   ├── tmdb_5000_movies.csv   # TMDB 5000 Movie Dataset con información básica de películas
+│   ├── tmdb_5000_credits.csv  # TMDB 5000 Movie Dataset con información extendida de películas
+│   
+├── images/                    # Contiene las imágenes utilizadas para ejemplos y fórmulas
+│   
+│
+├── notebooks/                 # Notebooks de Jupyter con análisis y desarrollo de modelos
+│   ├── 01_EDA.ipynb           # Análisis Exploratorio de Datos (EDA)
+│   └── 02_Recommender_systems.ipynb  # Desarrollo de los sistemas de recomendación
+│
+├── models/                    # Contiene el modelo entrenado en formato .pkl
+│   └── modelo_svd.pkl          # Modelo entrenado de Filtrado Colaborativo con SVD
+│
 
-![Gráfico del sistema de recomendación](images/grafico_recomendador.png)
+## ⚙️ Requisitos
+
+Este proyecto utiliza las siguientes librerías:
+
+- `pandas`
+- `numpy`
+- `scikit-learn`
+- `joblib`
+- `seaborn`
+- `plotly`
+- `matplotlib`
+
+## 🏁 Conclusiones
+
+Este proyecto ha sido una excelente oportunidad para explorar diferentes enfoques de sistemas de recomendación y entender cómo cada uno puede ser útil en escenarios reales. A continuación, algunas conclusiones clave:
+
+1. **Basado en Popularidad**: 
+   Este sistema es simple y rápido de implementar, y funciona bien cuando se busca recomendar las películas más populares entre todos los usuarios. Sin embargo, no personaliza las recomendaciones y puede ser menos efectivo en ciertos contextos, como en usuarios con gustos más específicos.
+
+2. **Filtrado Basado en Contenido**: 
+   Este enfoque utiliza las características de las películas para encontrar similitudes entre ellas. Es una buena opción cuando el historial del usuario es limitado, pero puede ser limitado si las características de las películas no están bien definidas o son escasas.
+
+3. **Filtrado Colaborativo**:
+   El filtrado colaborativo es muy potente cuando se tiene una gran cantidad de datos de interacción de los usuarios, ya que es capaz de aprender patrones de comportamiento de usuarios similares. Sin embargo, puede ser costoso en términos de tiempo de cómputo y también se enfrenta a desafíos como el "cold start" (problemas cuando no hay suficiente historial de un usuario nuevo).
+
+
+En general, los sistemas de recomendación pueden ser herramientas poderosas para personalizar las experiencias de los usuarios, no tiene porque haber uno que sea mejor que otro, cada uno tiene su función y además se peuden complementar, como vimos en el ejemplo de Netflix. Conviene hacer pruebas y estudiar cual funciona mejor en cada caso.
+
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas mejorar el proyecto, por favor abre un pull request o una issue.
+
+## 👨‍💻 Autor
+
+- Sergio Delgado
+- sergiodelamp@gmail.com
+- https://github.com/Sergiio02
