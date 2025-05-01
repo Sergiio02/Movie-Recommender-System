@@ -26,21 +26,21 @@ Ambos datasets están disponibles en Kaggle.
 
 ## 💻 Estructura del repositorio
 
-├── data/                      # Contiene los datasets descargados de Kaggle
-│   ├── ratings_small.csv      # The Movies Dataset en elq ue se incluye información de usuarios y sus valoraciones
-│   ├── tmdb_5000_movies.csv   # TMDB 5000 Movie Dataset con información básica de películas
-│   ├── tmdb_5000_credits.csv  # TMDB 5000 Movie Dataset con información extendida de películas
-│   
-├── images/                    # Contiene las imágenes utilizadas para ejemplos y fórmulas
-│   
-│
-├── notebooks/                 # Notebooks de Jupyter con análisis y desarrollo de modelos
-│   ├── 01_EDA.ipynb           # Análisis Exploratorio de Datos (EDA)
+```
+├── data/                       # Contiene los datasets descargados de Kaggle
+│   ├── ratings_small.csv       # The Movies Dataset con valoraciones de usuarios
+│   ├── tmdb_5000_movies.csv    # TMDB 5000 Movie Dataset con información básica
+│   └── tmdb_5000_credits.csv   # TMDB 5000 Movie Dataset con información extendida
+
+├── images/                     # Imágenes utilizadas para ejemplos y visualizaciones
+
+├── notebooks/                  # Notebooks de Jupyter con análisis y modelos
+│   ├── 01_EDA.ipynb            # Análisis Exploratorio de Datos (EDA)
 │   └── 02_Recommender_systems.ipynb  # Desarrollo de los sistemas de recomendación
-│
-├── models/                    # Contiene el modelo entrenado en formato .pkl
-│   └── modelo_svd.pkl          # Modelo entrenado de Filtrado Colaborativo con SVD
-│
+
+├── models/                     # Modelos entrenados guardados
+│   └── modelo_svd.pkl          # Modelo de Filtrado Colaborativo (SVD)
+```
 
 ## ⚙️ Requisitos
 
